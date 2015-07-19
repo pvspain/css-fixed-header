@@ -1,6 +1,6 @@
 var opts = {
   dev: {
-    rootFile: "index.html"
+    rootFile: "index.html",
     rootFolder: "debug",
     port: 8001
   },
@@ -24,6 +24,7 @@ var opts = {
 
 var gulp = require("gulp");
 var connect = require("gulp-connect");
+var rmdir  = require("rimraf");
 
 function cbStreamError(error) {
   console.error(error);
